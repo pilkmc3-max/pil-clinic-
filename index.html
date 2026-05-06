@@ -95,6 +95,74 @@ nav a {
   text-align: center;
   padding: 40px;
 }
+  .doctor-section {
+  padding: 80px 20px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.doctor-profile {
+  max-width: 900px;
+  margin: 40px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  text-align: left;
+}
+
+.doctor-photo {
+  width: 320px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.doctor-info h3 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.doctor-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.doctor-info li {
+  font-size: 17px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.doctor-info li::before {
+  content: "• ";
+  color: #2563eb;
+  font-weight: bold;
+}
+  @media (max-width: 768px) {
+  .doctor-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .doctor-photo {
+    width: 260px;
+    height: 330px;
+  }
+
+  .doctor-info h3 {
+    font-size: 26px;
+  }
+}
 </style>
 
 </head>
